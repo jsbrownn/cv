@@ -34,17 +34,21 @@ tasks and try to find alternative solutions.
   * Taking reasonable initiative
   * __Modesty)__
 ## Education
-1. "Minsk State Professional and Technical College of Installation and Lifting and Transportation works" (electrician for repair and maintenance of electrical equipment) 2010 - 2011
+1. "Minsk State Professional and Technical College of Installation and Lifting and Transportation works" (electrician for repair and maintenance of electrical equipment), 2010 - 2011
 
-2. The branch of BNTU "Minsk State Polytechnic College" (installation and repair of electrical equipment, production activities) 2013 - 2017
+2. The branch of BNTU "Minsk State Polytechnic College" (installation and repair of electrical equipment, production activities), 2013 - 2017
 
 ## Work experience
 
-1. Construction Trust №7 , electrician? 2011-2016
+1. Construction Trust №7 , electrician, 2011-2016
 2. NVV LLC  
     * administrator 2016 - 2018
     * senior administrator 2018 - 2021
    * head of the Administrative Department 2021 - present
 
-
+## Languages
+1. English (A1)
+2. Polish (A1)
+3. Russian (native)
+3. Belarusian (native)
 
