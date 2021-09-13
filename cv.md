@@ -33,6 +33,24 @@ tasks and try to find alternative solutions.
   * I like to teach and I know that I have the ability to do this
   * Taking reasonable initiative
   * __Modesty)__
+
+## Code Example
+```
+const mixedArray = [3, 13, 74, 14, 66, 15, 22, 4];
+const isEven = num => {
+    if (num % 2 == 0) {
+        return true
+    } else {
+        return false
+    }
+}
+const filterArray = (mixedArray, isEven) => {
+    mixedArray.filter( (elem) => {
+        return isEven(elem)
+    })
+}
+console.log(filterArray(mixedArray, isEven));
+```
 ## Education
 1. "Minsk State Professional and Technical College of Installation and Lifting and Transportation works" (electrician for repair and maintenance of electrical equipment), 2010 - 2011
 
