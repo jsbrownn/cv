@@ -3,7 +3,7 @@
 - Location: Minsk, Belarus
 - Phone: +375 44 764 82 84
 - Email: boreiko.for.work@gmail.com
-- [GitHub](https://github.com/jsbrownn)</br>
+- [GitHub](https://github.com/jsbrownn)
 ## About me
 I am easy to learn, not afraid of difficult tasks. I like writing code and it brings me pleasure.
 I find a common language with people without problems, I have an active life position, I am looking for
