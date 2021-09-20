@@ -62,7 +62,7 @@ console.log(filterArray(mixedArray, isEven));
 2. NVV LLC  
     * administrator 2016 - 2018
     * senior administrator 2018 - 2021
-   * head of the Administrative Department 2021 - present
+    * head of the Administrative Department 2021 - present
 
 ## Languages
 1. English (A1)
