@@ -164,6 +164,15 @@ h6 {
 
 }
 
+/* pre */
+.code-example{
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+.hljs language-javascript{
+  font-size: 10px;
+}
+
 .main-page{
   margin-top: 50px;
 }

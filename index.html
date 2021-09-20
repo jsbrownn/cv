@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/rsschool-cv/js/highlight.js2/styles/default.min.css" />
+    <script src="./js/highlight.js2/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
     <title>Sergei Boreiko</title>
   </head>
   <body>
@@ -89,22 +94,24 @@
           </section>
           <section class="page__section">
             <h2 class="section__title">code Example</h2>
-                <code class="code-example">
-                  const mixedArray = [3, 13, 74, 14, 66, 15, 22, 4];
-                  const isEven = num => {
-                  if (num % 2 == 0) {
-                    return true
-                    } else {
-                    return false
-                    }
-                  }
-                const filterArray = (mixedArray, isEven) => {
-                  mixedArray.filter( (elem) => {
-                    return isEven(elem)
-                    })
-                  }
-                  console.log(filterArray(mixedArray, isEven));
-                </code>
+            <pre class="code-example">
+            <code >
+const mixedArray = [3, 13, 74, 14, 66, 15, 22, 4];
+const isEven = num => {
+  if (num % 2 == 0) {
+    return true
+  } else {
+    return false
+  }
+}
+const filterArray = (mixedArray, isEven) => {
+  mixedArray.filter((elem) => {
+    return isEven(elem)
+  })
+} 
+console.log(filterArray(mixedArray, isEven));
+            </code>
+          </pre>
             <div class="section__description"></div>
           </section>
           <section class="page__section">
