@@ -44,6 +44,7 @@ h6 {
     min-height: 100vh;
     min-width: 320px;
     background-color: #212126;
+    color: lightgrey;
 }
 
 
@@ -52,6 +53,7 @@ h6 {
     flex-direction: column;
     max-width: 1280px;
     margin: 0 auto;
+
 }
 
 .header{
@@ -60,7 +62,16 @@ h6 {
   min-height: 50px;
   width:100%;
   position: fixed;
+
 }
+
+.contacts-item{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+
 
 
 /* humburger */
@@ -156,12 +167,25 @@ h6 {
 
 /* section */
 .section__title{
-  
+  font-weight: 500;
   color: lightgrey;
   text-transform: uppercase;
   text-decoration:underline;
   text-decoration-color: #F2B705;
+  margin: 20px 0;
 
+}
+
+.contacts-list__item{
+  display: flex;
+  margin-bottom: 10px;
+
+}
+
+.contacts-item__img{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
 
 /* pre */
@@ -169,10 +193,23 @@ h6 {
   word-break: break-all;
   white-space: pre-wrap;
 }
-.hljs language-javascript{
+.hljs {
   font-size: 10px;
+
 }
 
 .main-page{
   margin-top: 50px;
+}
+
+.footer{
+  background: #F2B705;
+  min-height: 50px;
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.rsschool__img{
+  height: 25px;
+  width: 75px;
 }
