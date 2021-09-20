@@ -76,16 +76,13 @@ h6 {
   flex-wrap: nowrap;
 }
 
-/* humburger */
-
-/* скрываем чекбокс */
 #menu__toggle {
   opacity: 0;
 }
-/* стилизуем кнопку */
+
 .menu__btn {
-  display: flex; /* используем flex для центрирования содержимого */
-  align-items: center; /* центрируем содержимое кнопки */
+  display: flex;
+  align-items: center;
   position: fixed;
   top: 15px;
   left: 15px;
@@ -94,7 +91,7 @@ h6 {
   cursor: pointer;
   z-index: 1;
 }
-/* добавляем "гамбургер" */
+
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
