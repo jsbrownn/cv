@@ -3,30 +3,29 @@
   src: url();
 }
 
-
 html,
 body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
-    display: block;
-    text-decoration: none;
+  display: block;
+  text-decoration: none;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ul li {
-    list-style: none;
+  list-style: none;
 }
 
 h1,
@@ -35,46 +34,40 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
-    font-weight: normal;
+  margin: 0;
+  font-weight: normal;
 }
 
 .wrapper {
-    overflow: hidden;
-    min-height: 100vh;
-    min-width: 320px;
-    background-color: #212126;
-    color: lightgrey;
+  overflow: hidden;
+  min-height: 100vh;
+  min-width: 320px;
+  background-color: #212126;
+  color: lightgrey;
 }
-
 
 .container {
-    display: flex;
-    flex-direction: column;
-    max-width: 1280px;
-    padding: 2%;
-    margin: 0 auto;
-
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2%;
 }
 
-.header{
-  background-color: #F2B705;
+.header {
+  background-color: #f2b705;
   display: flex;
   min-height: 50px;
-  width:100%;
+  width: 100%;
   position: fixed;
   z-index: 5000;
-
 }
 
-.contacts-item{
+.contacts-item {
   display: flex;
   justify-content: space-around;
   flex-wrap: nowrap;
 }
-
-
-
 
 /* humburger */
 
@@ -85,7 +78,7 @@ h6 {
 /* стилизуем кнопку */
 .menu__btn {
   display: flex; /* используем flex для центрирования содержимого */
-  align-items: center;  /* центрируем содержимое кнопки */
+  align-items: center; /* центрируем содержимое кнопки */
   position: fixed;
   top: 15px;
   left: 15px;
@@ -105,11 +98,11 @@ h6 {
   background-color: #616161;
 }
 .menu__btn > span::before {
-  content: '';
+  content: "";
   top: -8px;
 }
 .menu__btn > span::after {
-  content: '';
+  content: "";
   top: 8px;
 }
 .nav__list {
@@ -124,21 +117,24 @@ h6 {
   padding: 40px 0;
   list-style: none;
   text-align: center;
-  background-color: #ECEFF1;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  background-color:  #333338;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
 }
 /* элементы меню */
 .nav-list__item {
   display: block;
   padding: 10px 20px;
-  color: #333;
-  font-family: 'Roboto', sans-serif;
+  background-color: #333338;
+  color: #f2b705;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
+  text-transform: uppercase;
 }
-.nav-list__item:hover {
-  background-color: #CFD8DC;
+.nav-list__item:ho {
+  background-color: #cfd8dc;
+  transform: scale(1.2)
 }
 #menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
@@ -158,23 +154,23 @@ h6 {
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
-  transition-duration: .25s;
+  transition-duration: 0.25s;
 }
 .nav__list {
-  transition-duration: .25s;
+  transition-duration: 0.25s;
 }
 .nav-list__item {
-  transition-duration: .25s;
+  transition-duration: 0.25s;
 }
 
-.page-section__avatar{
+.page-section__avatar {
   display: flex;
   flex-direction: column;
 }
 
-.avatar-wrap{
-  width: 246px;
-  height: 330px;
+.avatar-wrap {
+  width: 250px;
+  height: 300px;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -185,100 +181,147 @@ h6 {
   height: 300px;
 }
 
-.info{
-  color:rgba(0, 0, 0, .8);
-  background: #F2B705;
+.info {
+  color: rgba(0, 0, 0, 0.8);
+  background: #f2b705;
   padding: 1%;
   flex: 1;
-  
+  text-align: center;
 }
 
-.info__title{
+.info__title {
   font-family: Comfortaa;
   text-transform: uppercase;
-  letter-spacing:2px;
+  letter-spacing: 2px;
 }
 
-.contacts-link{
-  color:lightgrey;
+.contacts-link {
+  color: lightgrey;
 }
 
 /* section */
-.section__title{
+.section__title {
   font-weight: 500;
   color: lightgrey;
   text-transform: uppercase;
-  text-decoration:underline;
-  text-decoration-color: #F2B705;
+  text-decoration: underline;
+  text-decoration-color: #f2b705;
   margin: 20px 0;
 }
 
 .hard-skills-list__item,
 .soft-skills-list__item,
-.nvv-list__item{
+.nvv-list__item {
   list-style: outside;
   margin-left: 20px;
   line-height: 20px;
 }
 
 .education-list__item,
-.work-experience-list__item{
+.work-experience-list__item {
   margin-bottom: 10px;
 }
 
-
-.contacts-list__item{
+.contacts-list__item {
   display: flex;
   margin-bottom: 10px;
-
 }
 
-.contacts-item__img{
+.contacts-item__img {
   width: 20px;
   height: 20px;
   margin-right: 10px;
 }
 
-.hard-skills-list__item>abbr{
+.hard-skills-list__item > abbr,
+.education-list__item > abbr {
   text-decoration: none;
-
 }
 
 /* pre */
-.code-example{
+.code-example {
   word-break: break-all;
   white-space: pre-wrap;
 }
 .hljs {
   font-size: 10px;
-
 }
 
-.main-page{
+.main-page {
   margin-top: 50px;
 }
 
-.container--footer{
+.container--footer {
   width: 100%;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-.footer{
-  background: #F2B705;
+.footer {
+  background: #f2b705;
   min-height: 30px;
   padding: 5px;
-  display:flex;
+  display: flex;
   justify-content: space-evenly;
 }
 
-.copyright{
+.copyright {
   color: rgba(17, 15, 15, 0.712);
-  font-weight: 900;
+  font-weight: 500;
 }
 
-.rsschool__img{
+.rsschool__img {
   height: 30px;
   width: 75px;
+}
+
+@media screen  and (min-width: 720px) {
+  .page-section__avatar {
+    /* flex-direction: row; */
+    
+  }
+
+  .page-section__contacts{
+    flex:1 0;
+  }
+  .info{
+    max-height: 70px;
+    
+  }
+  .menu__toggle{
+    display: none;
+  }
+  .menu__btn{
+    display: none;
+  }
+  .nav__list{
+    visibility: visible;
+    position:inherit;
+    color: black;
+    display: flex;
+    font-size: 1em;
+    background-color:initial;
+    box-shadow: initial;
+    width:100%;
+    padding: 0;
+    display: flex;
+
+  }
+  .nav-list__item {
+    display: block;
+    padding: 5px;
+    background-color :#f2b705;
+    color:black;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+.nav-list__item:hover{
+  background-color: #f2b705;
+}
+
 }
