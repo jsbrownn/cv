@@ -173,8 +173,14 @@ h6 {
   text-decoration:underline;
   text-decoration-color: #F2B705;
   margin: 20px 0;
-
 }
+
+.hard-skills-list__item,
+.soft-skills-list__item,
+.nvv-list__item{
+  list-style: inside;
+}
+
 
 .contacts-list__item{
   display: flex;
@@ -204,12 +210,18 @@ h6 {
 
 .footer{
   background: #F2B705;
-  min-height: 50px;
+  min-height: 30px;
+  padding: 5px;
   display:flex;
   justify-content: space-evenly;
 }
 
+.copyright{
+  color: rgba(17, 15, 15, 0.712);
+  font-weight: 900;
+}
+
 .rsschool__img{
-  height: 25px;
+  height: 30px;
   width: 75px;
 }
