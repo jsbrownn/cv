@@ -199,6 +199,11 @@ h6 {
   margin-right: 10px;
 }
 
+.hard-skills-list__item>abbr{
+  text-decoration: none;
+
+}
+
 /* pre */
 .code-example{
   word-break: break-all;
