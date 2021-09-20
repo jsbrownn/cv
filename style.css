@@ -1,18 +1,18 @@
+@font-face {
+  font-family: ;
+  src: url();
+}
+
+
 html,
 body {
     margin: 0;
     padding: 0;
-    font-family: "Inter", sans-serif;
-    background-color: #e5e5e5;
     min-height: 100vh;
 }
 
 * {
     box-sizing: border-box;
-}
-
-p {
-    margin: 0;
 }
 
 a {
@@ -63,6 +63,7 @@ h6 {
   min-height: 50px;
   width:100%;
   position: fixed;
+  z-index: 5000;
 
 }
 
@@ -166,6 +167,38 @@ h6 {
   transition-duration: .25s;
 }
 
+.page-section__avatar{
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar-wrap{
+  width: 246px;
+  height: 330px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.avatar {
+  object-fit: cover;
+  width: 250px;
+  height: 300px;
+}
+
+.info{
+  color:rgba(0, 0, 0, .8);
+  background: #F2B705;
+  padding: 1%;
+  flex: 1;
+  
+}
+
+.info__title{
+  font-family: Comfortaa;
+  text-transform: uppercase;
+  letter-spacing:2px;
+}
+
 .contacts-link{
   color:lightgrey;
 }
@@ -183,7 +216,14 @@ h6 {
 .hard-skills-list__item,
 .soft-skills-list__item,
 .nvv-list__item{
-  list-style: inside;
+  list-style: outside;
+  margin-left: 20px;
+  line-height: 20px;
+}
+
+.education-list__item,
+.work-experience-list__item{
+  margin-bottom: 10px;
 }
 
 

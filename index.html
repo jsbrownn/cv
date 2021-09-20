@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="/rsschool-cv/js/highlight.js2/styles/default.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;600&display=swap" rel="stylesheet" />
     <script src="./js/highlight.js2/highlight.min.js"></script>
     <script>
       hljs.highlightAll();
@@ -74,6 +77,15 @@
       </header>
       <main class="main-page">
         <div class="container">
+          <section class="page__section page-section__avatar">
+            <div class="avatar-wrap">
+              <img src="./img/blackAndWhite.jpg" alt="avatar" class="avatar" />
+            </div>
+            <div class="info">
+              <h1 class="info__title">Sergei Boreiko</h1>
+              <div class="info__desc">Web-developer</div>
+            </div>
+          </section>
           <section class="page__section">
             <h2 class="section__title">contacts</h2>
             <div class="section__description">
@@ -92,8 +104,7 @@
                       <use xlink:href="#img-location"></use>
                     </svg>
                   </div>
-                  <address> Location: Minsk, Belarus</address>
-                 
+                  <address>Location: Minsk, Belarus</address>
                 </li>
                 <li class="contacts-list__item">
                   <div class="contacts-item__img contacts-item__img--phone">
@@ -125,7 +136,9 @@
                       <use xlink:href="#img-email"></use>
                     </svg>
                   </div>
-                  <a class="contacts-link" href="mailto:boreiko.for.work@gmail.com"> Email: boreiko.for.work@gmail.com</a>
+                  <a class="contacts-link" href="mailto:boreiko.for.work@gmail.com">
+                    Email: boreiko.for.work@gmail.com</a
+                  >
                 </li>
                 <li class="contacts-list__item">
                   <div class="contacts-item__img contacts-item__img--github">
@@ -142,7 +155,6 @@
                     </svg>
                   </div>
                   <a class="contacts-link" href="https://github.com/jsbrownn">GitHub</a>
-                  
                 </li>
               </ul>
             </div>
@@ -150,10 +162,12 @@
           <section class="page__section">
             <h2 class="section__title">about me</h2>
             <div class="section__description">
-              I am easy to learn, not afraid of difficult tasks. I like writing code and it brings me pleasure. I find a
-              common language with people without problems, I have an active life position, I am looking for positive in
-              any situation and, as a rule, I succeed it. I am critical of any tasks and try to find alternative
-              solutions.
+              <p>
+                I am easy to learn, not afraid of difficult tasks. I like writing code and it brings me pleasure. I find
+                a common language with people without problems, I have an active life position, I am looking for
+                positive in any situation and, as a rule, I succeed it. I am critical of any tasks and try to find
+                alternative solutions.
+              </p>
             </div>
           </section>
           <section class="page__section">
@@ -166,12 +180,39 @@
                 <li class="hard-skills-list__item"><abbr title="Javascript">JS</abbr></li>
                 <li class="hard-skills-list__item"><abbr title="BlockElementModificator">BEM</abbr></li>
                 <li class="hard-skills-list__item"><abbr title="Version Control System">GIT</abbr></li>
-                <li class="hard-skills-list__item"><abbr title="Bourne again shell, каламбур «Born again» shell — «возрождённый» shell">BASH</abbr></li>
-                <li class="hard-skills-list__item"><abbr title="Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development">Bootstrap</abbr></li>
-                <li class="hard-skills-list__item"><abbr title="PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance">PostgresSQL</abbr></li>
-                <li class="hard-skills-list__item"><abbr title="React is a free and open-source front-end JavaScript library for building user interfaces or UI components.">React</abbr></li>
-                <li class="hard-skills-list__item"><abbr title="Rails is a model–view–controller framework, providing default structures for a database, a web service, and web pages.">Ruby on Rails</abbr></li>
-                <li class="hard-skills-list__item"><abbr title="Slim is a Ruby template language whose goal is reduce the syntax to the essential parts without becoming cryptic.">Slim</abbr></li>
+                <li class="hard-skills-list__item">
+                  <abbr title="Bourne again shell, каламбур «Born again» shell — «возрождённый» shell">BASH</abbr>
+                </li>
+                <li class="hard-skills-list__item">
+                  <abbr
+                    title="Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development"
+                    >Bootstrap</abbr
+                  >
+                </li>
+                <li class="hard-skills-list__item">
+                  <abbr
+                    title="PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance"
+                    >PostgresSQL</abbr
+                  >
+                </li>
+                <li class="hard-skills-list__item">
+                  <abbr
+                    title="React is a free and open-source front-end JavaScript library for building user interfaces or UI components."
+                    >React</abbr
+                  >
+                </li>
+                <li class="hard-skills-list__item">
+                  <abbr
+                    title="Rails is a model–view–controller framework, providing default structures for a database, a web service, and web pages."
+                    >Ruby on Rails</abbr
+                  >
+                </li>
+                <li class="hard-skills-list__item">
+                  <abbr
+                    title="Slim is a Ruby template language whose goal is reduce the syntax to the essential parts without becoming cryptic."
+                    >Slim</abbr
+                  >
+                </li>
               </ul>
             </div>
           </section>
@@ -189,7 +230,7 @@
                 <li class="soft-skills-list__item">Good sense of humour</li>
                 <li class="soft-skills-list__item">I like to teach and I know that I have the ability to do this</li>
                 <li class="soft-skills-list__item">Taking reasonable initiative</li>
-                <li class="soft-skills-list__item">Modesty)</li>
+                <li class="soft-skills-list__item"><b>Modesty)</b></li>
               </ul>
             </div>
           </section>
@@ -224,7 +265,7 @@ console.log(filterArray(mixArray, isEven));
                   (electrician for repair and maintenance of electrical equipment) , 2010 - 2011
                 </li>
                 <li class="education-list__item">
-                  The branch of BNTU "Minsk State Polytechnic College" (installation and repair of electrical equipment,
+                  The branch of "<abbr title="Belarusian National Technical University">BNTU</abbr> "Minsk State Polytechnic College" (installation and repair of electrical equipment,
                   production activities), 2013 - 2017
                 </li>
               </ol>
@@ -253,7 +294,7 @@ console.log(filterArray(mixArray, isEven));
                 <li class="languages-list__item">English (A1)</li>
                 <li class="languages-list__item">Polish (A1)</li>
                 <li class="languages-list__item">Russian (native)</li>
-                <li class="languages-list__item">Belarussian (native)</li>
+                <li class="languages-list__item">Belarusian (native)</li>
               </ol>
             </div>
           </section>
