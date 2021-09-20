@@ -50,8 +50,8 @@
       </defs>
     </svg>
     <div class="wrapper">
-      <div class="container">
-        <header class="header">
+      <header class="header">
+        <div class="container">
           <nav class="header__nav">
             <div class="humburger-menu">
               <input type="checkbox" id="menu__toggle" />
@@ -70,8 +70,10 @@
               </ul>
             </div>
           </nav>
-        </header>
-        <main class="main-page">
+        </div>
+      </header>
+      <main class="main-page">
+        <div class="container">
           <section class="page__section">
             <h2 class="section__title">contacts</h2>
             <div class="section__description">
@@ -106,7 +108,7 @@
                       <use xlink:href="#img-phone"></use>
                     </svg>
                   </div>
-                  Phone: +375 44 764 82 84
+                  <a class="contacts-link" href="tel:+375 44 764 82 84">Phone: +375 44 764 82 84</a>
                 </li>
                 <li class="contacts-list__item">
                   <div class="contacts-item__img contacts-item__img--email">
@@ -122,7 +124,7 @@
                       <use xlink:href="#img-email"></use>
                     </svg>
                   </div>
-                  Email: boreiko.for.work@gmail.com
+                  <a class="contacts-link" href="mailto:boreiko.for.work@gmail.com"> Email: boreiko.for.work@gmail.com</a>
                 </li>
                 <li class="contacts-list__item">
                   <div class="contacts-item__img contacts-item__img--github">
@@ -253,8 +255,10 @@ console.log(filterArray(mixArray, isEven));
               </ol>
             </div>
           </section>
-        </main>
-        <footer class="footer">
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container container--footer">
           <div class="github">
             <a href="https://github.com/jsbrownn">
               <svg
@@ -272,12 +276,12 @@ console.log(filterArray(mixArray, isEven));
           </div>
           <div class="copyright">&copy 2021</div>
           <div class="rsschool">
-            <a href="">
+            <a href="https://rs.school/js/">
               <img src="https://rs.school/images/rs_school_js.svg" alt="rs_school-logo" class="rsschool__img" />
             </a>
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
