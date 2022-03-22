@@ -1,4 +1,4 @@
-console.log('running')
+console.log("cv еще не доработано, в процессе...очень торопился обновить(")
 
 const modal = document.querySelector('#modalWindow')
 const iframe = document.querySelector('#iframe-project')
@@ -14,11 +14,7 @@ const closeModal = (event) =>{
     wrapper.style.filter = 'none';
     modal.style.display = 'none'
     iframe.src = ""
-  }else {
-    event.sto
-    console.log(event.path)
   }
-
   
 }
 

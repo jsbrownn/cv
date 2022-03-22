@@ -345,12 +345,13 @@ h6 {
 }
 
 .projects_card {
-  
   background-size: cover;
   margin-bottom: 2rem;
-  width: 45%;
+  width: 100%;
   height: 60vw;
+  cursor: pointer;
 }
+
 
 /* pre */
 .code-example {
@@ -475,7 +476,7 @@ h6 {
     flex-wrap: wrap;
   }
   .projects_card{
-    max-width: 45vw;
+    max-width: 48%;
     max-height: 34vw;
   }
   
