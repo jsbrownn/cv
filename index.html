@@ -8,10 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;600&display=swap" rel="stylesheet" />
-    <script src="./js/highlight.js2/highlight.min.js"></script>
-    <script>
-      hljs.highlightAll();
-    </script>
     <title>Sergei Boreiko</title>
   </head>
   <body>
@@ -62,20 +58,20 @@
                 <span></span>
               </label>
               <ul class="nav__list">
-                <li><a class="nav-list__item" href="#contacts">contacts</a></li>
-                <li><a class="nav-list__item" href="#about-me">about me</a></li>
-                <li><a class="nav-list__item" href="#hard-skills">hard skills</a></li>
-                <li><a class="nav-list__item" href="#soft-skills">soft skills</a></li>
-                <li><a class="nav-list__item" href="#code-example">code example</a></li>
-                <li><a class="nav-list__item" href="#education">education</a></li>
-                <li><a class="nav-list__item" href="#work-experience">work experience</a></li>
-                <li><a class="nav-list__item" href="#languages">languages</a></li>
+                <li class='nav_li'><a class="nav-list__item" href="#contacts">contacts</a></li>
+                <li class='nav_li'><a class="nav-list__item" href="#about-me">about me</a></li>
+                <li class='nav_li'><a class="nav-list__item" href="#hard-skills">hard skills</a></li>
+                <li class='nav_li'><a class="nav-list__item" href="#soft-skills">soft skills</a></li>
+                <li class='nav_li'><a class="nav-list__item" href="#pet-projects">pet projects</a></li>
+                <li class='nav_li'><a class="nav-list__item" href="#education">education</a></li>
+                <li class='nav_li'><a class="nav-list__item" href="#work-experience">work experience</a></li>
+                <li class='nav_li'><a class="nav-list__item" href="#languages">languages</a></li>
               </ul>
             </div>
           </nav>
         </div>
       </header>
-      <main class="main-page"> 
+      <main class="main-page">
         <div class="container">
           <section class="page__section page-section__avatar">
             <div class="avatar-wrap">
@@ -83,7 +79,7 @@
             </div>
             <div class="info">
               <h1 class="info__title">Sergei Boreiko</h1>
-              <div class="info__desc">Web-developer</div>
+              <div class="info__desc">Frontend-developer</div>
             </div>
           </section>
           <section class="page__section" id="contacts">
@@ -104,7 +100,7 @@
                       <use xlink:href="#img-location"></use>
                     </svg>
                   </div>
-                  <address>Location: Minsk, Belarus</address>
+                  <address>Location: Batumi, Georgia</address>
                 </li>
                 <li class="contacts-list__item">
                   <div class="contacts-item__img contacts-item__img--phone">
@@ -120,7 +116,7 @@
                       <use xlink:href="#img-phone"></use>
                     </svg>
                   </div>
-                  <a class="contacts-link" href="tel:+375447648284">Phone: +375 44 764 82 84</a>
+                  <a class="contacts-link" href="tel:+375447648284">Phone: +995 557 533 464</a>
                 </li>
                 <li class="contacts-list__item">
                   <div class="contacts-item__img contacts-item__img--email">
@@ -159,14 +155,14 @@
               </ul>
             </div>
           </section>
-          <section class="page__section" id ="about-me">
+          <section class="page__section" id="about-me">
             <h2 class="section__title">about me</h2>
             <div class="section__description">
               <p>
-                I am easy to learn, not afraid of difficult tasks. I like writing code and it brings me pleasure. I find
-                a common language with people without problems, I have an active life position, I am looking for
-                positive in any situation and, as a rule, I succeed it. I am critical of any tasks and try to find
-                alternative solutions.
+                I learn new things fast and easy and I am not afraid of difficult tasks. I like writing code and it
+                brings me pleasure. I communicate with people easily, proactive, I am looking for positive sides of any
+                situation and, as a rule, I succeed in it. Using critical thinking I tend to find solutions to any
+                tasks.
               </p>
             </div>
           </section>
@@ -181,6 +177,12 @@
                 <li class="hard-skills-list__item"><abbr title="BlockElementModificator">BEM</abbr></li>
                 <li class="hard-skills-list__item"><abbr title="Version Control System">GIT</abbr></li>
                 <li class="hard-skills-list__item">
+                  <abbr
+                    title="React is a free and open-source front-end JavaScript library for building user interfaces or UI components."
+                    >React</abbr
+                  >
+                </li>
+                <li class="hard-skills-list__item">
                   <abbr title="Bourne again shell, каламбур «Born again» shell — «возрождённый» shell">BASH</abbr>
                 </li>
                 <li class="hard-skills-list__item">
@@ -189,30 +191,21 @@
                     >Bootstrap</abbr
                   >
                 </li>
-                <li class="hard-skills-list__item">
-                  <abbr
-                    title="PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance"
-                    >PostgresSQL</abbr
-                  >
-                </li>
-                <li class="hard-skills-list__item">
-                  <abbr
-                    title="React is a free and open-source front-end JavaScript library for building user interfaces or UI components."
-                    >React</abbr
-                  >
-                </li>
+              
+                
                 <li class="hard-skills-list__item">
                   <abbr
                     title="Rails is a model–view–controller framework, providing default structures for a database, a web service, and web pages."
                     >Ruby on Rails</abbr
                   >
                 </li>
+
                 <li class="hard-skills-list__item">
                   <abbr
-                    title="Slim is a Ruby template language whose goal is reduce the syntax to the essential parts without becoming cryptic."
-                    >Slim</abbr
-                  >
+                    title="TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale."
+                    >TypeScript</abbr>
                 </li>
+                
               </ul>
             </div>
           </section>
@@ -234,7 +227,7 @@
               </ul>
             </div>
           </section>
-          <section class="page__section" id="code-example">
+          <!-- <section class="page__section" id="code-example">
             <h2 class="section__title">code Example</h2>
             <pre class="code-example">
             <code >
@@ -255,6 +248,20 @@ console.log(filterArray(mixArray, isEven));
             </code>
           </pre>
             <div class="section__description"></div>
+          </section> -->
+          <section class="page__section" id="pet-projects">
+            <h2 class="section__title">Pet projects</h2>
+              <div class="projects__container">
+                <div class="projects_card projects_card--gitproject" id = "gitproject">
+                </div>
+                <div class="projects_card projects_card--momentum" id = "momentum">
+                </div>
+                <div class="projects_card projects_card--museum" id = "museum">
+                </div>
+                <div class="projects_card projects_card--tictactoe" id = "tictactoe">
+                </div>
+              </div>
+            <div class="section__description"></div>
           </section>
           <section class="page__section" id="education">
             <h2 class="section__title">education</h2>
@@ -265,8 +272,30 @@ console.log(filterArray(mixArray, isEven));
                   (electrician for repair and maintenance of electrical equipment) , 2010 - 2011
                 </li>
                 <li class="education-list__item">
-                  The branch of "<abbr title="Belarusian National Technical University">BNTU</abbr> "Minsk State Polytechnic College" (installation and repair of electrical equipment,
-                  production activities), 2013 - 2017
+                  The branch of "<abbr title="Belarusian National Technical University">BNTU</abbr> "Minsk State
+                  Polytechnic College" (installation and repair of electrical equipment, production activities), 2013 -
+                  2017
+                </li>
+                <li class="education-list__item">
+                  Loftschool - website layout basics
+                </li>
+                <li class="education-list__item">
+                  Loftschool - web development for beginners 
+                </li>
+                <li class="education-list__item">
+                  Loftschool - comprehensive Javascript training
+                </li>
+                <li class="education-list__item">
+                  RS School - JS/Frontend
+                </li>
+                <li class="education-list__item">
+                  Loftschool - React. Web application development (now)
+                </li>
+                <li class="education-list__item">
+                  Loftschool - Node.js server side javascript (now)
+                </li>
+                <li class="education-list__item">
+                  Scrimba - The Frontend Developer Career Path (now)
                 </li>
               </ol>
             </div>
@@ -281,7 +310,7 @@ console.log(filterArray(mixArray, isEven));
                   <ul class="nvv-list">
                     <li class="nvv-list__item">administrator 2016 - 2018</li>
                     <li class="nvv-list__item">senior administrator 2018 - 2021</li>
-                    <li class="nvv-list__item">head of the Administrative Department 2021 - present</li>
+                    <li class="nvv-list__item">head of the Administrative Department 2021 - 2022</li>
                   </ul>
                 </li>
               </ol>
@@ -291,15 +320,15 @@ console.log(filterArray(mixArray, isEven));
             <h2 class="section__title">languages</h2>
             <div class="section__description">
               <ol class="languages-list">
-                <li class="languages-list__item">English (A1)</li>
-                <li class="languages-list__item">Polish (A1)</li>
+                <li class="languages-list__item">English (A2)</li>
+                <li class="languages-list__item">Polish (A2)</li>
                 <li class="languages-list__item">Russian (native)</li>
                 <li class="languages-list__item">Belarusian (native)</li>
               </ol>
             </div>
           </section>
         </div>
-      </main> 
+      </main>
       <footer class="footer">
         <div class="container container--footer">
           <div class="github">
@@ -317,7 +346,7 @@ console.log(filterArray(mixArray, isEven));
               </svg>
             </a>
           </div>
-          <div class="copyright">&copy;    2021</div>
+          <div class="copyright">&copy; 2021</div>
           <div class="rsschool">
             <a href="https://rs.school/js/">
               <img src="https://rs.school/images/rs_school_js.svg" alt="rs_school-logo" class="rsschool__img" />
@@ -325,7 +354,17 @@ console.log(filterArray(mixArray, isEven));
           </div>
         </div>
       </footer>
+     
     </div>
+    <div id="modalWindow" class="modal-window">
+      <div class="modal-window-header">
+        <div class="modal-window-title">Я модальное окно)</div>
+        <div class="modal-window-close">x</div>
+      </div>
+      <div class="modal-window-content">
+          <iframe id='iframe-project' src="about:blank" frameborder="0"></iframe>
+      </div>
+  </div>
     <script src="./main.js"></script>
   </body>
 </html>
