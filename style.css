@@ -66,11 +66,24 @@ h6 {
 }
 /*  modal window */
 
-
-.modal-window {
-  display: none; 
+.modal__overlay{
   position: fixed;
   z-index: 4444;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 4445;
+  visibility: hidden;
+
+}
+
+
+.modal-window {
+  position: absolute;
   background: #eee;
   border-radius: 5px;
   box-shadow: 2px 2px 5px #000000;
@@ -79,8 +92,8 @@ h6 {
   bottom: 0;
   right: 0;
   margin: auto;
-  max-width: 80vw;
-  max-height: 100vh;
+  max-width: 90vw;
+  min-height: 100vh;
 }
 
 .modal-window-header{

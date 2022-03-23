@@ -355,15 +355,18 @@ console.log(filterArray(mixArray, isEven));
       </footer>
      
     </div>
-    <div id="modalWindow" class="modal-window">
-      <div class="modal-window-header">
-        <div class="modal-window-title">Я модальное окно)</div>
-        <div class="modal-window-close">x</div>
+    <div class="modal__overlay">
+      <div id="modalWindow" class="modal-window">
+        <div class="modal-window-header">
+          <div class="modal-window-title">Я модальное окно)</div>
+          <div class="modal-window-close">x</div>
+        </div>
+        <div class="modal-window-content">
+            <iframe id='iframe-project' src="about:blank" frameborder="0"></iframe>
+        </div>
       </div>
-      <div class="modal-window-content">
-          <iframe id='iframe-project' src="about:blank" frameborder="0"></iframe>
-      </div>
-  </div>
+    </div>
+    
     <script src="./main.js"></script>
   </body>
 </html>

@@ -4,23 +4,21 @@ const modal = document.querySelector('#modalWindow')
 const iframe = document.querySelector('#iframe-project')
 const closeEl = document.querySelector('.modal-window-close')
 const modalTitle = document.querySelector('.modal-window-title');
-const wrapper = document.querySelector('.wrapper')
+const wrapper = document.querySelector('.wrapper');
+const overlay = document.querySelector('.modal__overlay');
 
 const closeModal = (event) =>{
 
- 
-  if( event.target === closeEl){
     document.body.style.overflow = 'scroll'
     wrapper.style.filter = 'none';
-    modal.style.display = 'none'
-    iframe.src = ""
-  }
-  
+    overlay.style.visibility = 'hidden';
+    iframe.src = "";
+    overlay.removeEventListener('click', closeModal)
+
 }
 
 
 const showModal = (card) => {
-
 
   const projectSrc = {
     gitproject: 'https://gitproject.vercel.app/',
@@ -29,19 +27,12 @@ const showModal = (card) => {
     tictactoe: 'https://jsbrownn.github.io/tic-tac-toe/'
   }
 
- 
-
-  
   modalTitle.textContent = card.id;
-  modal.style.display = 'block';
   document.body.style.overflow = 'hidden';
   wrapper.style.filter = 'brightness(0.2)';
+  overlay.style.visibility = 'visible';
   iframe.src = projectSrc[card.id];
-  
-  
-  document.addEventListener('click', (event) =>{
-    closeModal(event)
-  })
+  overlay.addEventListener('click',closeModal);
 
 }
 
