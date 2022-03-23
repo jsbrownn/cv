@@ -6,6 +6,29 @@ const closeEl = document.querySelector('.modal-window-close')
 const modalTitle = document.querySelector('.modal-window-title');
 const wrapper = document.querySelector('.wrapper');
 const overlay = document.querySelector('.modal__overlay');
+const menuToogle = document.querySelector('#menu__toggle')
+
+
+
+menuToogle.addEventListener('change',(event)=>{
+ console.log('click',event.target)
+  const btn = event.target;
+
+  const removeChecked =()=>{
+    btn.checked = false;
+  }
+
+  if(btn.checked){
+    document.addEventListener('click',removeChecked,false)
+  } 
+  else
+  {
+    document.removeEventListener('click',removeChecked,false)
+    btn.checked = true;
+  }  
+
+});
+
 
 const closeModal = (event) =>{
 
