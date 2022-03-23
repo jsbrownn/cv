@@ -32,6 +32,8 @@ menuToogle.addEventListener('change',(event)=>{
 
 const closeModal = (event) =>{
 
+  
+
     document.body.style.overflow = 'scroll'
     wrapper.style.filter = 'none';
     overlay.style.visibility = 'hidden';
@@ -56,6 +58,7 @@ const showModal = (card) => {
   overlay.style.visibility = 'visible';
   iframe.src = projectSrc[card.id];
   overlay.addEventListener('click',closeModal);
+  overlay.addEventListener('keydown',closeModal);
 
 }
 
